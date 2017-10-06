@@ -59,6 +59,8 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_CHARGER_SHOW_PERCENTAGE := true
 BACKLIGHT_PATH := "/sys/class/leds/button-backlight/brightness"
 
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
+
 # CMHW
 BOARD_HARDWARE_CLASS := device/lenovo/passion/cmhw/src
 
